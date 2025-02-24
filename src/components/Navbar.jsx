@@ -1,10 +1,9 @@
-// src/components/Navbar.jsx
 import React from "react";
 
 const Navbar = () => {
   return (
     <nav className="bg-[#FFF0F4] w-full py-4">
-      {/* Wrap the navbar contents in a container */}
+      {/* Navbar container */}
       <div className="max-w-6xl mx-auto px-6 pr-[178px] flex items-center bg-[#FFF0F4] justify-between">
         {/* Left: Logo / Name */}
         <div className="text-[30px] text-[#1e1e1e] font-leckerli whitespace-nowrap">
