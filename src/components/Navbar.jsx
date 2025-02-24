@@ -45,6 +45,14 @@ const Navbar = () => {
               Projects
             </a>
           </li>
+          <li>
+            <a
+              href="#contact"
+              className="text-[#1e1e1e] text-[16px] font-spectral font-semibold hover:text-blue-600"
+            >
+              Contact Me
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
