@@ -9,6 +9,8 @@ module.exports = {
       fontFamily: {
         leckerli: ['"Leckerli One"', "cursive"],
         spectral: ['"Spectral"', "serif"],
+        outfit: ['"Outfit"', "sans-serif"],
+        onest: ['"Onest"', "sans-serif"],
       },
     },
   },
