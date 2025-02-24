@@ -3,7 +3,7 @@ import React from "react";
 const ContactForm = () => {
   return (
     <section id="contact" className="py-16 bg-white font-outfit">
-      <div className="max-w-xl mx-auto px-4">
+      <div className="max-w-xl items-center mx-auto px-4">
         {/* Card Container */}
         <div className="card w-full bg-[#FFF0F4] shadow-xl p-8">
           <h2 className="text-2xl font-bold text-gray-800 text-center mb-6">
@@ -63,6 +63,50 @@ const ContactForm = () => {
             </button>
           </form>
         </div>
+        {/* Social Media Links */}
+        <div className="flex items-center justify-center mt-10 gap-4">
+              {/* LinkedIn */}
+              <a
+                href="https://www.linkedin.com/in/aprimrose/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-blue-600"
+              >
+                <img
+                  src="/assets/icons/linkedinIcon.svg"
+                  alt="LinkedIn"
+                  className="w-5 h-5"
+                />
+              </a>
+
+              {/* GitHub */}
+              <a
+                href="https://github.com/Primrizzle"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-blue-600"
+              >
+                <img
+                  src="/assets/icons/githubIcon.svg"
+                  alt="GitHub"
+                  className="w-5 h-5"
+                />
+              </a>
+
+              {/* Instagram */}
+              <a
+                href="https://www.instagram.com/primrizzle/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-blue-600"
+              >
+                <img
+                  src="/assets/icons/instagramIcon.svg"
+                  alt="Instagram"
+                  className="w-5 h-5"
+                />
+              </a>
+            </div>
       </div>
     </section>
   );

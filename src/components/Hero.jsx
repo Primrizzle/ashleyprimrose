@@ -3,7 +3,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="relative z-10 bg-[#FFF0F4]"> {/* Ensures the background is white */}
+    <div className="relative z-10 bg-[#FFF0F4]">
       <section
         className="bg-[#FFF0F4] py-16 px-6 flex flex-col-reverse md:flex-row items-center md:items-start md:justify-between max-w-6xl mx-auto"
       >
@@ -19,49 +19,80 @@ const Hero = () => {
             with over 10 years in healthcare settings and previous management experience.
           </p>
 
-          {/* Location & Availability */}
-          <div className="mt-6 flex flex-col gap-1 sm:flex-row sm:items-center sm:gap-6">
-            <div className="flex items-center gap-2">
-              <img src="/assets/icons/locationIcon.svg" alt="Location icon" className="w-5 h-5" />
-              <span className="text-gray-600 font-outfit">Dallas, Texas</span>
+          {/* Location, Availability, Resume Button & Social Media (left-aligned) */}
+          <div className="mt-6 flex flex-col items-start gap-4">
+            {/* Location & Availability */}
+            <div className="flex flex-col gap-2">
+              <div className="flex items-center gap-2">
+                <img
+                  src="/assets/icons/locationIcon.svg"
+                  alt="Location icon"
+                  className="w-5 h-5"
+                />
+                <span className="text-gray-600 font-spectral">Dallas, Texas</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 rounded-full bg-emerald-300" />
+                <span className="text-gray-600 font-spectral">
+                  Available for new projects
+                </span>
+              </div>
             </div>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 rounded-full bg-emerald-500" />
-              <span className="text-gray-600 font-outfit">Available for new projects</span>
+
+            {/* My Resume Button */}
+            <button className="inline-flex items-center space-x-2 px-4 py-2 bg-[#DBDEB2] text-black font-spectral rounded hover:bg-green-600">
+              <img
+                src="/assets/icons/downloadIcon.svg"
+                alt="Download Icon"
+                className="w-4 h-4"
+              />
+              <span>My Resume</span>
+            </button>
+
+            {/* Social Media Links */}
+            <div className="flex items-center mt-2 gap-4">
+              {/* LinkedIn */}
+              <a
+                href="https://www.linkedin.com/in/aprimrose/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-blue-600"
+              >
+                <img
+                  src="/assets/icons/linkedinIcon.svg"
+                  alt="LinkedIn"
+                  className="w-5 h-5"
+                />
+              </a>
+
+              {/* GitHub */}
+              <a
+                href="https://github.com/Primrizzle"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-blue-600"
+              >
+                <img
+                  src="/assets/icons/githubIcon.svg"
+                  alt="GitHub"
+                  className="w-5 h-5"
+                />
+              </a>
+
+              {/* Instagram */}
+              <a
+                href="https://www.instagram.com/primrizzle/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-blue-600"
+              >
+                <img
+                  src="/assets/icons/instagramIcon.svg"
+                  alt="Instagram"
+                  className="w-5 h-5"
+                />
+              </a>
             </div>
-          </div>
-
-          {/* Social Media Links */}
-          <div className="mt-4 flex items-center gap-4">
-            {/* LinkedIn */}
-            <a
-              href="https://linkedin.com/in/your-profile"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 hover:text-blue-600"
-            >
-              <img src="/assets/icons/linkedinIcon.svg" alt="LinkedIn" className="w-5 h-5" />
-            </a>
-
-            {/* GitHub */}
-            <a
-              href="https://github.com/your-username"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 hover:text-blue-600"
-            >
-              <img src="/assets/icons/githubIcon.svg" alt="GitHub" className="w-5 h-5" />
-            </a>
-
-            {/* Instagram */}
-            <a
-              href="https://instagram.com/your-handle"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 hover:text-blue-600"
-            >
-              <img src="/assets/icons/instagramIcon.svg" alt="Instagram" className="w-5 h-5" />
-            </a>
           </div>
         </div>
 
@@ -74,7 +105,6 @@ const Hero = () => {
               alt="Decorative shape"
               className="absolute -top-8 left-6 w-[250px] h-[400px] z-0"
             />
-
             {/* Main hero image */}
             <img
               src="/assets/images/headshotOne.jpg"
