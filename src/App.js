@@ -5,10 +5,8 @@ import Skills from "./components/Skills";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Experiences from "./components/Experiences";
-/*import About from "./components/About";
-import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import Footer from "./components/Footer";*/
+import Footer from "./components/Footer";
 
 console.log("✅ App.js is running!");
 
@@ -24,6 +22,8 @@ function App() {
       <About />
       <Experiences />
       <Projects />
+      <Contact />
+      <Footer />
     </div>
   );
 }

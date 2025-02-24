@@ -3,9 +3,9 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="relative z-10 bg-white"> {/* Ensures the background is white */}
+    <div className="relative z-10 bg-[#FFF0F4]"> {/* Ensures the background is white */}
       <section
-        className="bg-white py-16 px-6 flex flex-col-reverse md:flex-row items-center md:items-start md:justify-between max-w-6xl mx-auto"
+        className="bg-[#FFF0F4] py-16 px-6 flex flex-col-reverse md:flex-row items-center md:items-start md:justify-between max-w-6xl mx-auto"
       >
         {/* Left Column: Text and Info */}
         <div className="md:w-1/2 mt-8 md:mt-0">
@@ -22,7 +22,7 @@ const Hero = () => {
           {/* Location & Availability */}
           <div className="mt-6 flex flex-col gap-1 sm:flex-row sm:items-center sm:gap-6">
             <div className="flex items-center gap-2">
-              <img src="/assets/icons/locationIcon.jpg" alt="Location icon" className="w-5 h-5" />
+              <img src="/assets/icons/locationIcon.svg" alt="Location icon" className="w-5 h-5" />
               <span className="text-gray-600 font-outfit">Dallas, Texas</span>
             </div>
             <div className="flex items-center gap-2">
@@ -40,7 +40,7 @@ const Hero = () => {
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-blue-600"
             >
-              <img src="/assets/icons/linkedinIcon.png" alt="LinkedIn" className="w-5 h-5" />
+              <img src="/assets/icons/linkedinIcon.svg" alt="LinkedIn" className="w-5 h-5" />
             </a>
 
             {/* GitHub */}
@@ -50,7 +50,7 @@ const Hero = () => {
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-blue-600"
             >
-              <img src="/assets/icons/githubIcon.png" alt="GitHub" className="w-5 h-5" />
+              <img src="/assets/icons/githubIcon.svg" alt="GitHub" className="w-5 h-5" />
             </a>
 
             {/* Instagram */}
@@ -60,7 +60,7 @@ const Hero = () => {
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-blue-600"
             >
-              <img src="/assets/icons/instagramIcon.jpg" alt="Instagram" className="w-5 h-5" />
+              <img src="/assets/icons/instagramIcon.svg" alt="Instagram" className="w-5 h-5" />
             </a>
           </div>
         </div>

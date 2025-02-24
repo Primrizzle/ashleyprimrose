@@ -40,7 +40,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 bg-white flex justify-center">
+    <section id="projects" className="py-20 bg-[#FFF0F4] flex justify-center">
       <div className="max-w-5xl w-full px-6 md:px-12 lg:px-20">
         {/* Section Title */}
         <div className="text-center mb-12">
