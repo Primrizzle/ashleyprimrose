@@ -16,7 +16,7 @@ const Navbar = () => {
           <li>
             <a
               href="#about"
-              className="text-[#1e1e1e] text-[16px] font-spectral font-semibold hover:text-blue-600"
+              className="text-[#1e1e1e] text-[16px] font-spectral font-semibold rounded hover:bg-[#c9c9a2]"
             >
               About
             </a>
@@ -24,7 +24,7 @@ const Navbar = () => {
           <li>
             <a
               href="#skills"
-              className="text-[#1e1e1e] text-[16px] font-spectral font-semibold hover:text-blue-600"
+              className="text-[#1e1e1e] text-[16px] font-spectral font-semibold rounded hover:bg-[#c9c9a2]"
             >
               Skills
             </a>
@@ -32,7 +32,7 @@ const Navbar = () => {
           <li>
             <a
               href="#experience"
-              className="text-[#1e1e1e] text-[16px] font-spectral font-semibold hover:text-blue-600"
+              className="text-[#1e1e1e] text-[16px] font-spectral font-semibold rounded hover:bg-[#c9c9a2]"
             >
               Experience
             </a>
@@ -40,7 +40,7 @@ const Navbar = () => {
           <li>
             <a
               href="#projects"
-              className="text-[#1e1e1e] text-[16px] font-spectral font-semibold hover:text-blue-600"
+              className="text-[#1e1e1e] text-[16px] font-spectral font-semibold rounded hover:bg-[#c9c9a2]"
             >
               Projects
             </a>
@@ -48,7 +48,7 @@ const Navbar = () => {
           <li>
             <a
               href="#contact"
-              className="text-[#1e1e1e] text-[16px] font-spectral font-semibold hover:text-blue-600"
+              className="text-[#1e1e1e] text-[16px] font-spectral font-semibold rounded hover:bg-[#c9c9a2]"
             >
               Contact Me
             </a>

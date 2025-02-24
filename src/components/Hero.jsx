@@ -40,8 +40,9 @@ const Hero = () => {
             </div>
 
             {/* My Resume Button */}
-            <button className="inline-flex items-center space-x-2 px-4 py-2 bg-[#DBDEB2] text-black font-spectral rounded hover:bg-green-600">
+            <button className="inline-flex items-center space-x-2 px-4 py-2 bg-[#DBDEB2] text-black font-spectral rounded hover:bg-[#c9c9a2] border border-[#f4f6db]">
               <img
+                href="/assets/files/AshleyPrimroseResume.pdf"
                 src="/assets/icons/downloadIcon.svg"
                 alt="Download Icon"
                 className="w-4 h-4"
