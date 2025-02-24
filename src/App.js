@@ -8,11 +8,6 @@ import Experiences from "./components/Experiences";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
-console.log("✅ App.js is running!");
-
-console.log("🔎 Navbar:", Navbar);
-
-
 function App() {
   return (
     <div>

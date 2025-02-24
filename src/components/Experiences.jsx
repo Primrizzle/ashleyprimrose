@@ -13,7 +13,7 @@ const experiences = [
       "Ensured project success through Agile methodologies by managing risks, refining workflows, and meeting sponsor requirements.",
     ],
     duration: "Aug 2024 - Dec 2024",
-    logoSize: "w-[90px]", // IntelliHub smaller
+    logoSize: "w-[90px]",
   },
   {
     title: "Data Processing Supervisor",
@@ -26,7 +26,7 @@ const experiences = [
       "Analyzed team performance metrics and presented insights using visualization tools to drive process improvements and inform senior management.",
     ],
     duration: "May 2021 - Oct 2022",
-    logoSize: "w-[170px]", // AmerisourceBergen slightly larger
+    logoSize: "w-[170px]", 
   },
   {
     title: "Certified Pharmacy Technician",
@@ -39,7 +39,7 @@ const experiences = [
       "Provided reliable support in retail pharmacy settings, ensuring efficiency and accuracy in daily operations.",
     ],
     duration: "Dec 2015 - May 2017",
-    logoSize: "w-[150px]", // Kroger slightly larger
+    logoSize: "w-[150px]", 
   },
 ];
 

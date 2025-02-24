@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# 🚀 Ashley Primrose - Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my personal portfolio website! This site showcases my projects, skills, and experience as a **Software Engineer**. It includes a downloadable resume, contact information, and links to my social profiles.
 
-## Available Scripts
+![Portfolio Screenshot](https://github.com/Primrizzle/ashleyprimrose/blob/main/screenshots/APHomepage.png) <!-- Replace with an actual screenshot if available -->
 
-In the project directory, you can run:
+## 🌐 Live Website
+[**🔗 Visit my portfolio**](https://ashleyprimrose.com)  
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📌 Features
+✅ **Responsive Design** - Fully optimized for mobile, tablet, and desktop  
+✅ **Custom Domain** - Hosted at [ashleyprimrose.com](https://ashleyprimrose.com)  
+✅ **Downloadable Resume** - Easy access to my resume  
+✅ **Smooth Animations** - Styled with Tailwind CSS  
+✅ **Fast & Secure** - Deployed on **Vercel** with free **SSL (HTTPS)**  
+✅ **Social Links** - Connect with me on **LinkedIn, GitHub, and more**  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Tech Stack
+- **Frontend**: React.js, Tailwind CSS
+- **Deployment**: Vercel
+- **Version Control**: Git & GitHub
+- **Hosting**: Vercel with a custom domain via Namecheap
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📸 Screenshots
+| Home Page | Skills Section | Projects |
+|-----------|--------------|----------|
+| ![Home](https://github.com/Primrizzle/ashleyprimrose/blob/main/screenshots/APHomepage.png) | ![Skills](https://github.com/Primrizzle/ashleyprimrose/blob/main/screenshots/APSkillpage.png) | ![Projects](https://github.com/Primrizzle/ashleyprimrose/blob/main/screenshots/APProjectpage.png) |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Installation & Setup
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run the project locally:
 
-### `npm run eject`
+1️⃣ **Clone the repository**
+```sh
+git clone https://github.com/your-username/portfolio.git
+cd portfolio
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2️⃣ Install dependencies
+```sh
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3️⃣ Run the development server
+```sh
+npm run dev
+```
+The site will be available at http://localhost:3000.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+🚀 Deployment  
+This portfolio is deployed using Vercel. Follow these steps to deploy:  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Push changes to GitHub  
+Go to Vercel Dashboard → Import your GitHub repository  
+Set build command:
+```sh
+Copy
+Edit
+npm run build
+```
+Set output directory: build
+Click Deploy! 🎉
 
-## Learn More
+📄 License
+This project is open-source and available under the MIT License.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+📬 Contact Me
+📧 Email: ashprimrose94@gmail.com  
+🔗 Website: www.ashleyprimrose.com  
+💼 LinkedIn: [linkedin.com/in/aprimrose/](https://www.linkedin.com/in/aprimrose/)  
+👨‍💻 GitHub: [github.com/Primrizzle  ](https://github.com/Primrizzle)
+  
+✨ Thank you for visiting my portfolio! ✨

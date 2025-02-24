@@ -19,7 +19,7 @@ const Hero = () => {
             with over 10 years in healthcare settings and previous management experience.
           </p>
 
-          {/* Location, Availability, Resume Button & Social Media (left-aligned) */}
+          {/* Location, Availability, Resume Button & Social Media */}
           <div className="mt-6 flex flex-col items-start gap-4">
             {/* Location & Availability */}
             <div className="flex flex-col gap-2">
@@ -97,7 +97,7 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Right Column: Hero Image(s) */}
+        {/* Right Column: Headshot and decoration */}
         <div className="md:w-1/2 flex justify-center md:justify-end">
           <div className="relative w-full max-w-sm">
             {/* Green rectangle behind */}
