@@ -54,7 +54,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              // Stretches columns to the same height + sets min height for visible centering
+              
               className="bg-white shadow-lg rounded-lg overflow-hidden p-6 flex flex-col md:flex-row items-stretch gap-6 min-h-[400px]"
             >
               {/* Left Column: Project Details */}
@@ -77,7 +77,7 @@ const Projects = () => {
                 </div>
               </div>
 
-              {/* Right Column: Centered Image */}
+              {/* Right Column: Project image */}
               <div className="flex-1 flex items-center justify-center">
                 <img
                   src={project.image}
