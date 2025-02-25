@@ -12,7 +12,7 @@
     { name: "Java", img: "/assets/icons/icon-java.svg" },
     { name: "Git", img: "/assets/icons/icon-git.svg" },
     { name: "AWS", img: "/assets/icons/icon-AWS.svg" },
-    { name: "Azure", img: "/assets/icons/logo-azure.png" },
+    { name: "Azure", img: "/assets/icons/icon-azure.svg" },
     ];
 
     const Skills = () => {
