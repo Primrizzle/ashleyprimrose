@@ -56,8 +56,7 @@ const ContactForm = () => {
             {/* Submit Button */}
             <button
               type="submit"
-              className="btn w-full md:w-auto bg-[#f4f6db] text-gray-800 hover:bg-[#c9c9a2] 
-                         border border-[#f4f6db]"
+              className="btn w-full md:w-auto bg-[#f4f6db] text-gray-800 hover:bg-[#c9c9a2] border border-[#f4f6db]"
             >
               Submit
             </button>
