@@ -5,16 +5,18 @@ const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [status, setStatus] = useState(""); // For showing success/error messages
+  const [status, setStatus] = useState(""); 
+  const [loading, setLoading] = useState(false); 
 
   // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setStatus("Sending...");
+    setStatus("");
+    setLoading(true);
 
     try {
-      // Make a POST request to your serverless function
-      const response = await fetch("/api/sendEmail", {
+      // Make a POST request to backend
+      const response = await fetch("http://localhost:5000/api/sendEmail", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, message }),
@@ -22,20 +24,22 @@ const ContactForm = () => {
 
       if (!response.ok) {
         const errorData = await response.json();
-        throw new Error(errorData.error || "Error sending email");
+        throw new Error(errorData.error || "Failed to send message.");
       }
 
       // If successful, parse the response
       const result = await response.json();
-      setStatus(result.message); // e.g., "Email sent successfully!"
+      setStatus(result.success); 
 
-      // Clear the form fields
+     
       setName("");
       setEmail("");
       setMessage("");
     } catch (err) {
       console.error("Error sending email:", err);
-      setStatus("Failed to send email.");
+      setStatus("Failed to send message. Please try again.");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -62,7 +66,7 @@ const ContactForm = () => {
                 id="name"
                 className="input input-bordered w-full font-outfit bg-[#f4f6db] text-gray-800"
                 value={name}
-                onChange={(e) => setName(e.target.value)} // Update name state
+                onChange={(e) => setName(e.target.value)}
                 required
               />
             </div>
@@ -79,7 +83,7 @@ const ContactForm = () => {
                 id="email"
                 className="input input-bordered w-full bg-[#f4f6db] text-gray-800"
                 value={email}
-                onChange={(e) => setEmail(e.target.value)} // Update email state
+                onChange={(e) => setEmail(e.target.value)}
                 required
               />
             </div>
@@ -96,7 +100,7 @@ const ContactForm = () => {
                 className="textarea textarea-bordered w-full bg-[#f4f6db] text-gray-800"
                 rows={5}
                 value={message}
-                onChange={(e) => setMessage(e.target.value)} // Update message state
+                onChange={(e) => setMessage(e.target.value)}
                 required
               ></textarea>
             </div>
@@ -105,13 +109,18 @@ const ContactForm = () => {
             <button
               type="submit"
               className="btn w-full md:w-auto bg-[#f4f6db] text-gray-800 hover:bg-[#c9c9a2] border border-[#f4f6db]"
+              disabled={loading}
             >
-              Submit
+              {loading ? "Sending..." : "Submit"}
             </button>
 
             {/* Display submission status */}
             {status && (
-              <p className="text-center mt-4 text-sm text-gray-600">
+              <p
+                className={`text-center mt-4 text-sm ${
+                  status.includes("Failed") ? "text-red-600" : "text-green-600"
+                }`}
+              >
                 {status}
               </p>
             )}
@@ -120,7 +129,6 @@ const ContactForm = () => {
 
         {/* Social Media Links */}
         <div className="flex items-center justify-center mt-10 gap-4">
-          {/* LinkedIn */}
           <a
             href="https://www.linkedin.com/in/aprimrose/"
             target="_blank"
@@ -133,8 +141,6 @@ const ContactForm = () => {
               className="w-5 h-5"
             />
           </a>
-
-          {/* GitHub */}
           <a
             href="https://github.com/Primrizzle"
             target="_blank"
@@ -147,8 +153,6 @@ const ContactForm = () => {
               className="w-5 h-5"
             />
           </a>
-
-          {/* Instagram */}
           <a
             href="https://www.instagram.com/primrizzle/"
             target="_blank"
