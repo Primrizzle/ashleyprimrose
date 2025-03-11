@@ -38,7 +38,7 @@ const experiences = [
       "Maintained strict adherence to HIPAA and data security protocols when handling protected health information.",
       "Provided reliable support in retail pharmacy settings, ensuring efficiency and accuracy in daily operations.",
     ],
-    duration: "Dec 2015 - May 2017",
+    duration: "Dec 2015 - Present",
     logoSize: "w-[150px]", 
   },
 ];
